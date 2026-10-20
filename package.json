@@ -1,0 +1,14 @@
+{
+  "name": "offseason-serviceportaal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serviceportaal waar klanten van Offseason retouren, garantieclaims en niet-geleverde pakketten melden.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
