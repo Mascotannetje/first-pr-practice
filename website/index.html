@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resolvd · De AI-binnendienst voor installateurs</title>
+  <meta name="description" content="Resolvd neemt op als jij op de klus staat, beantwoordt aanvragen binnen een minuut, volgt offertes op en vraagt om reviews. Geen klus gemist.">
+  <meta name="theme-color" content="#0f1722">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Naar de inhoud</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top" aria-label="Resolvd, naar boven">Resolvd<span>.</span></a>
+      <nav aria-label="Hoofdmenu">
+        <ul class="nav-links">
+          <li><a href="#hoe">Hoe het werkt</a></li>
+          <li><a href="#bewijs">Bewijs</a></li>
+          <li><a href="#waarom">Waarom wij</a></li>
+          <li><a href="#vragen">Vragen</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-sm" href="#pilot">Doe mee met de pilot</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">De AI-binnendienst voor installateurs</p>
+          <h1 class="hero-title" aria-label="Geen klus gemist.">
+            <span class="word">Geen</span> <span class="word">klus</span> <span class="word accent">gemist.</span>
+          </h1>
+          <p class="lead reveal">Jij staat op de klus. Resolvd regelt de rest: we appen gemiste bellers direct terug, beantwoorden aanvragen binnen een minuut, volgen je offertes op en vragen tevreden klanten om een review.</p>
+          <div class="hero-cta reveal">
+            <a class="btn" href="#pilot">Doe mee met de gratis pilot</a>
+            <a class="btn btn-ghost" href="#hoe">Bekijk hoe het werkt</a>
+          </div>
+          <ul class="trust reveal" aria-label="Kenmerken">
+            <li>Werkt met je eigen telefoon en agenda</li>
+            <li>Jij houdt de regie</li>
+            <li>Live binnen twee weken</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="float-card fc-1"><span class="dot red"></span>Gemiste oproep · Mevr. Jansen</div>
+          <div class="float-card fc-2"><span class="dot green"></span>Offerte getekend</div>
+          <div class="float-card fc-3"><span class="stars-mini">★★★★★</span>Nieuwe review</div>
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="chat-head"><span class="chat-av">R</span><div><b>Mark Installatie</b><small>Resolvd-assistent · AI</small></div></div>
+              <div class="chat" id="heroChat"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEEM -->
+    <section class="problem" aria-labelledby="probleem-titel">
+      <div class="wrap problem-grid">
+        <h2 id="probleem-titel" class="reveal">Je ligt onder een cv-ketel. Je telefoon gaat. <span class="muted-line">Die klant belt nu de volgende installateur.</span></h2>
+        <div class="problem-side">
+          <div class="stat-inline reveal">
+            <span class="stat-num" data-count="69" data-suffix="%">69%</span>
+            <p>van de bellers die de voicemail krijgen, hangt op zonder bericht in te spreken.</p>
+            <span class="src">Bron: Moneypenny, onderzoek onder kleine bedrijven (VK)</span>
+          </div>
+          <ul class="leaks reveal">
+            <li><span class="dot red"></span>Gemiste oproepen tijdens een klus</li>
+            <li><span class="dot amber"></span>Aanvragen via de website die pas 's avonds antwoord krijgen</li>
+            <li><span class="dot amber"></span>Offertes waar niemand meer achteraan gaat</li>
+            <li><span class="dot red"></span>Tevreden klanten die nooit een review schrijven</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOE HET WERKT -->
+    <section class="how" id="hoe" aria-labelledby="hoe-titel">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Hoe het werkt</p>
+          <h2 id="hoe-titel">Vier momenten waarop je nu klussen mist</h2>
+          <p class="lead">Resolvd vangt ze op met een AI-assistent die je bedrijf kent, gekoppeld aan je telefoon, website, agenda en offertetool.</p>
+        </div>
+        <div class="how-grid">
+          <ol class="how-steps">
+            <li class="how-step" data-step="0">
+              <span class="step-n">01</span>
+              <h3>Gemiste oproep? Direct een appje terug.</h3>
+              <p>Neem je niet op, dan stuurt de assistent de beller meteen een WhatsApp-bericht, vraagt wat er aan de hand is en plant de klus in je agenda.</p>
+            </li>
+            <li class="how-step" data-step="1">
+              <span class="step-n">02</span>
+              <h3>Aanvraag via de website? Binnen een minuut antwoord.</h3>
+              <p>Wie snel antwoord krijgt, kiest vaker voor jou. De assistent reageert direct en stelt meteen de vragen die jij anders later moet stellen.</p>
+            </li>
+            <li class="how-step" data-step="2">
+              <span class="step-n">03</span>
+              <h3>Offerte verstuurd? Automatisch opgevolgd.</h3>
+              <p>Geen reactie na een paar dagen? De assistent stuurt een vriendelijk berichtje en zet het gesprek klaar als de klant vragen heeft.</p>
+            </li>
+            <li class="how-step" data-step="3">
+              <span class="step-n">04</span>
+              <h3>Klus klaar? Vraag om een review.</h3>
+              <p>Na elke afgeronde klus vraagt Resolvd om een Google-review. Zo groeit je reputatie vanzelf mee met je werk.</p>
+            </li>
+          </ol>
+          <div class="how-visual" aria-hidden="true">
+            <div class="phone phone-sticky">
+              <div class="notch"></div>
+              <div class="screen">
+                <div class="chat-head"><span class="chat-av">R</span><div><b>Mark Installatie</b><small>Resolvd-assistent · AI</small></div></div>
+                <div class="chat" id="howChat"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEWIJS -->
+    <section class="proof" id="bewijs" aria-labelledby="bewijs-titel">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Bewijs</p>
+          <h2 id="bewijs-titel">Snel zijn wint. Dat is onderzocht.</h2>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card reveal">
+            <span class="stat-num" data-count="7" data-suffix="×">7×</span>
+            <p>vaker een serieus gesprek als je binnen een uur reageert op een aanvraag.</p>
+            <span class="src">Harvard Business Review, 2011 · onderzoek bij 2.241 bedrijven</span>
+          </article>
+          <article class="proof-card reveal">
+            <span class="stat-num" data-count="25" data-prefix="−" data-suffix="%">−25%</span>
+            <p>no-shows als klanten vooraf een herinnering krijgen.</p>
+            <span class="src">Meta-analyse van 21 studies, 2016</span>
+          </article>
+          <article class="proof-card reveal">
+            <span class="stat-num">+5–9%</span>
+            <p>omzet bij één extra ster in online reviews.</p>
+            <span class="src">Harvard Business School · onderzoek bij restaurants</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAPPORT -->
+    <section class="report-sec" aria-labelledby="rapport-titel">
+      <div class="wrap report-grid">
+        <div class="reveal">
+          <p class="eyebrow">Elke maand</p>
+          <h2 id="rapport-titel">Zwart op wit wat het oplevert</h2>
+          <p class="lead">Een goede automatisering zie je niet meer. Daarom krijg je elke maand een rapport: hoeveel bellers we hebben opgevangen, hoeveel klussen er zijn ingepland en hoeveel offertes zijn opgevolgd. In jouw eigen cijfers.</p>
+        </div>
+        <div class="report reveal" aria-label="Voorbeeld van een maandrapport">
+          <div class="report-head"><b>Maandrapport</b><small>Mark Installatie · voorbeeld</small></div>
+          <div class="bar-row"><span>Oproepen opgevangen</span><div class="bar"><i style="--w:86%"></i></div></div>
+          <div class="bar-row"><span>Klussen ingepland</span><div class="bar"><i style="--w:64%"></i></div></div>
+          <div class="bar-row"><span>Offertes opgevolgd</span><div class="bar"><i style="--w:72%"></i></div></div>
+          <div class="bar-row"><span>Nieuwe reviews</span><div class="bar"><i style="--w:48%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAARDE -->
+    <section class="values" aria-labelledby="waarde-titel">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Wat het oplevert</p>
+          <h2 id="waarde-titel">Voor jou, je klant en je vak</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value v-blue reveal">
+            <span class="value-tag">Meer omzet</span>
+            <h3>Geen oproep, aanvraag of offerte valt meer tussen wal en schip</h3>
+          </article>
+          <article class="value v-green reveal">
+            <span class="value-tag">Minder druk</span>
+            <h3>Vakmensen zijn schaars. Die horen op de klus, niet aan de telefoon.</h3>
+          </article>
+          <article class="value v-pink reveal">
+            <span class="value-tag">Betere naam</span>
+            <h3>Jij staat bekend als de installateur die áltijd reageert</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAAROM WIJ -->
+    <section class="why" id="waarom" aria-labelledby="waarom-titel">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Waarom Resolvd</p>
+          <h2 id="waarom-titel">Waarom niet gewoon zelf ChatGPT?</h2>
+        </div>
+        <div class="compare reveal" role="table" aria-label="Vergelijking">
+          <div class="cmp-row cmp-head" role="row"><span role="columnheader"></span><span role="columnheader">Zelf met een chatbot</span><span role="columnheader" class="us">Met Resolvd</span></div>
+          <div class="cmp-row" role="row"><span role="cell">Uitzoeken waar je klussen mist</span><span role="cell" class="them">Zelf uitzoeken</span><span role="cell" class="us"><i>✓</i>Gratis scan</span></div>
+          <div class="cmp-row" role="row"><span role="cell">Gekoppeld aan je telefoon, agenda en offertes</span><span role="cell" class="them">Weet niks van jouw bedrijf</span><span role="cell" class="us"><i>✓</i>Alles gekoppeld</span></div>
+          <div class="cmp-row" role="row"><span role="cell">Meten wat het oplevert</span><span role="cell" class="them">Meet niemand</span><span role="cell" class="us"><i>✓</i>Maandrapport</span></div>
+          <div class="cmp-row" role="row"><span role="cell">Onderhoud als er iets verandert</span><span role="cell" class="them">Zelf repareren</span><span role="cell" class="us"><i>✓</i>Wij houden het bij</span></div>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card reveal"><h3>Jij houdt de regie</h3><p>Je bepaalt wat de assistent mag zeggen en plannen. Een mens blijft altijd bereikbaar.</p></article>
+          <article class="trust-card reveal"><h3>Eerlijk over AI</h3><p>De assistent zegt altijd dat hij een AI-assistent is, zoals de Europese AI-regels vragen.</p></article>
+          <article class="trust-card reveal"><h3>Privacy geregeld</h3><p>Met elke klant sluiten we een verwerkersovereenkomst. We gebruiken alleen de gegevens die nodig zijn.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANDERE BRANCHES -->
+    <section class="sectors" aria-labelledby="branche-titel">
+      <div class="wrap">
+        <h2 id="branche-titel" class="reveal">Geen installateur? Elk vakbedrijf heeft een eigen tijdlek.</h2>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Garages · afspraken en APK-herinneringen</span><span>Kappers · minder no-shows</span><span>Schilders · offertes sneller rond</span><span>Webshops · klantvragen direct beantwoord</span><span>Administratiekantoren · facturen automatisch ingelezen</span><span>Loodgieters · spoedmeldingen opgevangen</span>
+            <span>Garages · afspraken en APK-herinneringen</span><span>Kappers · minder no-shows</span><span>Schilders · offertes sneller rond</span><span>Webshops · klantvragen direct beantwoord</span><span>Administratiekantoren · facturen automatisch ingelezen</span><span>Loodgieters · spoedmeldingen opgevangen</span>
+          </div>
+        </div>
+        <p class="sectors-note reveal">We beginnen bij installateurs. Werk je in een andere branche? Doe toch de gratis scan, dan kijken we wat jouw bedrijf nodig heeft.</p>
+      </div>
+    </section>
+
+    <!-- PILOT -->
+    <section class="pilot" id="pilot" aria-labelledby="pilot-titel">
+      <div class="wrap pilot-grid">
+        <div class="reveal">
+          <p class="eyebrow">Gratis pilot</p>
+          <h2 id="pilot-titel">We zoeken drie installateurs.</h2>
+          <p class="lead">Doe mee met onze pilot. We beginnen met een gratis tijdlekscan van een uur, bouwen daarna je assistent en meten samen wat het oplevert.</p>
+          <ol class="pilot-steps">
+            <li><b>Tijdlekscan</b>We kijken waar je nu klussen mist.</li>
+            <li><b>Inrichten</b>Binnen twee weken draait je assistent.</li>
+            <li><b>Meten</b>Na een maand zie je wat het oplevert.</li>
+          </ol>
+        </div>
+        <form class="form reveal" id="pilotForm" novalidate>
+          <h3>Meld je aan</h3>
+          <label for="f-naam">Naam</label>
+          <input id="f-naam" name="naam" autocomplete="name" required>
+          <label for="f-bedrijf">Bedrijf</label>
+          <input id="f-bedrijf" name="bedrijf" autocomplete="organization" required>
+          <label for="f-contact">Telefoon of e-mail</label>
+          <input id="f-contact" name="contact" required>
+          <label for="f-team">Aantal medewerkers</label>
+          <select id="f-team" name="team">
+            <option>1–4</option><option>5–9</option><option>10–24</option><option>25–50</option><option>Meer dan 50</option>
+          </select>
+          <p class="form-error" id="formError" role="alert" hidden>Vul je naam, bedrijf en contactgegevens in.</p>
+          <button class="btn btn-block" type="submit">Verstuur via e-mail</button>
+          <p class="form-note">Je e-mailprogramma opent met je gegevens al ingevuld.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="vragen" aria-labelledby="faq-titel">
+      <div class="wrap faq-wrap">
+        <h2 id="faq-titel" class="reveal">Veelgestelde vragen</h2>
+        <details class="reveal"><summary>Neemt de AI-assistent zelf de telefoon op?</summary><p>Dat kan, maar het hoeft niet. Veel installateurs kiezen ervoor dat de assistent een gemiste beller direct terug appt. Jij bepaalt wat het beste werkt.</p></details>
+        <details class="reveal"><summary>Wat als de assistent iets verkeerds zegt?</summary><p>Je bepaalt vooraf wat hij mag beantwoorden en plannen. Twijfelt hij, dan zet hij het gesprek door naar jou. Jouw feedback onthoudt hij voor de volgende keer.</p></details>
+        <details class="reveal"><summary>Moet ik nieuwe software gaan gebruiken?</summary><p>Nee. We koppelen Resolvd aan wat je al hebt: je telefoonnummer, WhatsApp, agenda en offerte- of boekhoudprogramma.</p></details>
+        <details class="reveal"><summary>Hoe zit het met privacy?</summary><p>We sluiten een verwerkersovereenkomst met je af, gebruiken alleen de gegevens die nodig zijn en kiezen waar mogelijk voor Europese opslag.</p></details>
+        <details class="reveal"><summary>Wat kost het?</summary><p>De tijdlekscan is gratis. Daarna krijg je een vaste prijs voor het inrichten en een maandbedrag voor beheer. In de pilot betaal je niets.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="logo" href="#top">Resolvd<span>.</span></a>
+      <p>De AI-binnendienst voor installateurs · resolvd.nl</p>
+      <p class="muted">© <span id="year">2026</span> Resolvd</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

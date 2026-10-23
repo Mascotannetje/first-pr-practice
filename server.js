@@ -15,7 +15,7 @@ const TYPES = {
 
 createServer(async (req, res) => {
   const { pathname } = new URL(req.url, 'http://localhost');
-  const file = normalize(join(ROOT, pathname === '/' ? 'index.html' : decodeURIComponent(pathname)));
+  const file = normalize(join(ROOT, pathname.endsWith('/') ? `${decodeURIComponent(pathname)}index.html` : decodeURIComponent(pathname)));
   if (!file.startsWith(ROOT)) {
     res.writeHead(403).end();
     return;

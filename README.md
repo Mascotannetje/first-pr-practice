@@ -47,3 +47,16 @@ Dit is een werkend prototype. Wat er nog nodig is voor echt gebruik:
 3. **Ordercontrole.** Koppeling met de webshop (bijv. Shopify of WooCommerce) om te controleren of ordernummer en e-mailadres bij elkaar horen.
 4. **E-mailnotificaties** bij een nieuwe claim en bij elke statuswijziging.
 5. **Retourlabels** automatisch aanmaken via de vervoerder.
+
+## Resolvd-landingspagina
+
+In `website/` staat de landingspagina voor Resolvd (resolvd.nl): "De AI-binnendienst voor installateurs". Het is gewone HTML, CSS en JavaScript zonder build-stap.
+
+```bash
+npm start      # daarna http://localhost:8080/website/
+```
+
+Aanpassen:
+- Teksten staan in `website/index.html`, kleuren en lettertypes bovenaan `website/styles.css`.
+- Het pilotformulier opent het e-mailprogramma van de bezoeker. Zet het juiste adres in `CONTACT_EMAIL` bovenaan `website/main.js`.
+- De chatgesprekken in de telefoon staan in `CONVERSATIONS` in `website/main.js`.
