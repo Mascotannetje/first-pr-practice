@@ -84,22 +84,36 @@ const playHero = () => playConversation(heroChat, CONVERSATIONS[heroIndex], {
 });
 playHero();
 
-// "Hoe het werkt": de telefoon volgt de stap die in beeld is
+// "Hoe het werkt": klik op een stap, of laat de stappen vanzelf rouleren zolang de sectie in beeld is
 const howChat = document.getElementById('howChat');
 const steps = [...document.querySelectorAll('.how-step')];
 let activeStep = -1;
 let stopHow = () => {};
-const stepObserver = new IntersectionObserver((entries) => {
-  const visible = entries.filter((e) => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-  if (!visible) return;
-  const index = Number(visible.target.dataset.step);
-  if (index === activeStep) return;
+let autoTimer;
+let userChose = false;
+function showStep(index) {
   activeStep = index;
-  steps.forEach((s, i) => s.classList.toggle('active', i === index));
+  steps.forEach((s, i) => {
+    s.classList.toggle('active', i === index);
+    s.setAttribute('aria-pressed', String(i === index));
+  });
   stopHow();
   stopHow = playConversation(howChat, CONVERSATIONS[index], { gap: 800 });
-}, { threshold: [0.5, 0.75], rootMargin: '-20% 0px -20% 0px' });
-steps.forEach((s) => stepObserver.observe(s));
+}
+function scheduleNext() {
+  clearTimeout(autoTimer);
+  if (userChose || reduceMotion) return;
+  autoTimer = setTimeout(() => { showStep((activeStep + 1) % steps.length); scheduleNext(); }, 6500);
+}
+steps.forEach((step, i) => {
+  const choose = () => { userChose = true; clearTimeout(autoTimer); showStep(i); };
+  step.addEventListener('click', choose);
+  step.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); choose(); } });
+});
+new IntersectionObserver(([entry]) => {
+  if (entry.isIntersecting) { if (activeStep < 0) showStep(0); scheduleNext(); }
+  else clearTimeout(autoTimer);
+}, { threshold: 0.35 }).observe(document.getElementById('hoe'));
 
 // ---------- pilotformulier ----------
 const form = document.getElementById('pilotForm');
